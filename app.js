@@ -30,7 +30,8 @@ client.on("message", message => {
  // if(!message.author.bot && !saidAlready){ message.channel.send('Ready to brainlet!'); saidAlready = true;}
 
   
-  
+  if(message.content === "What size is EpicBox's brain?")
+  { message.channel.send("It's tiny!") }
   console.log(message.author.username);
   
    if (Math.random() < 0.005) message.react("🤔"); 
@@ -41,9 +42,10 @@ var cantun = client.emojis.find("name", "cantunbox");
  var brainlet = client.emojis.find("name", "brainlet");
  
  
- if (Math.random() < 0.05) message.react(cantun.id);  
+ if (Math.random() < 0.2) message.react(cantun.id);  
  
- if (Math.random() < 0.03)  message.react(brainlet.id); 
+ if (Math.random() < 0.33)  message.react(brainlet.id); 
+  if (Math.random() < 0.15)  message.react("🤐"); 
  }
  
  
