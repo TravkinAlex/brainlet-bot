@@ -1,0 +1,11 @@
+{
+  "name": "box-brainlet",
+  "version": "1.0.0",
+  "description": "as requested by 'p rogue' adds a :brainlet: reaction after every message by Igor Buchinsky",
+  "main": "bot.js",
+  "author": "PvtParrot",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "winston": "^2.4.0"
+  }
+}
