@@ -16,7 +16,7 @@ client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
   // Example of changing the bot's playing game to something useful. `client.user` is what the
   // docs refer to as the "ClientUser".
-  client.user.setGame(`Brainletting BoxDelux`);
+  client.user.setGame(`Brainlet time!`);
 });
 var saidAlready = false;
 
@@ -27,31 +27,34 @@ client.on("message", message => {
 	
   // It's good practice to ignore other bots. This also makes your bot ignore itself
   // and not get into a spam loop (we call that "botception").
- // if(!message.author.bot && !saidAlready){ message.channel.send('Ready to brainlet!'); saidAlready = true;}
+ if(!message.author.bot && !saidAlready){ message.channel.send('Ready to brainlet!'); saidAlready = true;}
 
   
-  if(message.content === "What size is EpicBox's brain?")
-  { message.channel.send("It's tiny!") }
+  if(message.content === "What size is Lobster's brain?")
+  {
+    message.channel.send("Calculating...");
+    setTimeout(function() {message.channel.send("It's tiny!")}, 3000);}
   console.log(message.author.username);
   
-   if (Math.random() < 0.005) message.react("🤔"); 
+   if (Math.random() < 0.001) message.react("🤔"); 
   
-  
-  if(message.author.username == 'EpicBox') {
-var cantun = client.emojis.find("name", "cantunbox");
+//   if(message.author.username == 'EpicBoX') {
+// var cantun = client.emojis.find("name", "cantunbox");
+//  var brainlet = client.emojis.find("name", "brainlet");
+ 
+ 
+//  if (Math.random() < 0.3) setTimeout(function() {message.react(cantun.id)}, 5000);  
+ 
+//  if (Math.random() < 0.4)  setTimeout(function() {message.react(brainlet.id)}, 7000); 
+//   if (Math.random() < 0.05)  message.react("🤐"); 
+//  }
+ 
  var brainlet = client.emojis.find("name", "brainlet");
- 
- 
- if (Math.random() < 0.2) message.react(cantun.id);  
- 
- if (Math.random() < 0.33)  message.react(brainlet.id); 
-  if (Math.random() < 0.15)  message.react("🤐"); 
- }
- 
- 
-   if(message.author.username == 'Irak_LØbster') {
 
-   if (Math.random() < 0.2) message.react("🤢"); 
+   if(message.author.username == 'Irak_Løbster') {
+
+   if (Math.random() < 0.3) message.react("🤢"); 
+   if (Math.random() < 0.99) message.react(brainlet.id); 
  }
   
   
